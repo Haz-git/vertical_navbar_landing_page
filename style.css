@@ -1,0 +1,79 @@
+body {
+    background-color: white;
+}
+
+.main-nav {
+    height: 100%; 
+    width: 160px;
+    position: fixed; /* Fixed when scrolling */
+    z-index: 1; /* It stays above material */
+    top: 0; /* It's all the way at the top */
+    left: 0; /* It's all the way left */
+    background-color: rgb(63, 60, 60);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+.main-nav a {
+    color: lightblue;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
+
+.main-nav a:hover {
+    background-color: gray;
+}
+
+@media screen and (max-height: 450px) {
+    .main-nav {padding-top: 15px;}
+    .main-nav a {font-size: 18px;}
+}
+  
+.header-container {
+    background-color: gray;
+    margin-left: 160px;
+}
+
+.header-container h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.backdrop-image-container {
+    margin-left: 160px;
+    background-color: lightpink;
+}
+
+.backdrop-image-container h2 {
+    text-align: center;
+    padding: 200px;
+}
+
+.grid-container {
+    margin-left: 160px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    background-color: bisque;
+}
+
+.img-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: bisque;
+}
+
+.img-container img {
+    height: 75%;
+    width: 75%;
+    filter: drop-shadow(0 0 0.75rem black);
+    transition: all .2s ease-in-out;
+}
+
+.img-container img:hover {
+    transform: scale(1.1);
+}
